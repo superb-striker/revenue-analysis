@@ -1,0 +1,3 @@
+friction_type,customers_with_friction,customers_churned,customers_retained,churn_rate_pct,revenue_before_friction,revenue_after_friction,estimated_leaked_revenue
+Bad Review (<=2 stars),12125,11907,218,98.2,2359768.77,41301.41,2316492.83
+Late Delivery,6498,6386,112,98.28,1188793.5,20644.59,1165086.69

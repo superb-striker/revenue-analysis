@@ -1,0 +1,10 @@
+sqlalchemy
+psycopg2-binary
+pandas
+numpy
+scikit-learn
+scipy
+statsmodels
+python-dotenv
+xgboost
+lightgbm

@@ -1,0 +1,4 @@
+test,comparison,group_a_rate,group_b_rate,group_a_n,group_b_n,p_value,significant_at_0.05
+two_proportion_ztest,late_delivery_vs_on_time,0.971852708694814,0.9623760767105477,5187,61530.0,0.0005062028065006659,True
+two_proportion_ztest,bad_review_vs_not,0.9674893987169729,0.9624130737134909,9197,57520.0,0.016475330684043794,True
+chi_square,rfm_segment_vs_churned,,,66717,,0.0,True

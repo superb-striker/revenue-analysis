@@ -1,0 +1,38 @@
+[project]
+name = "revenue-analysis"
+version = "0.1.0"
+description = "Customer Retention & Revenue Leakage Analysis for a Subscription Business"
+readme = "README.md"
+authors = [
+    { name = "Nipun Kothari", email = "nipunkothari04@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.115",
+    "lightgbm>=4.7.0",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pandera>=0.26",
+    "psycopg2-binary>=2.9.13",
+    "python-dotenv>=1.2.3",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "sqlalchemy>=2.0.54",
+    "statsmodels>=0.15.0",
+    "uvicorn>=0.34",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+revenue-analysis = "revenue_analysis:main"
+revenue-train = "revenue_analysis.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.27",
+    "pytest>=8",
+]

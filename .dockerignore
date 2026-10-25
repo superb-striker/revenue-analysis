@@ -1,0 +1,10 @@
+.git
+.venv
+.env
+data
+tableau_exports
+python
+migrations
+sql
+tests
+__pycache__

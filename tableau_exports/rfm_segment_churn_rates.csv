@@ -1,0 +1,9 @@
+rfm_segment,customers,churn_rate
+Hibernating / Lost,15444,0.9948847448847449
+Needs Attention,18672,0.9673307626392459
+Other,21829,0.961473269503871
+New / Promising,10596,0.9287466968667422
+Champions,31,0.0
+At Risk (High Value),5,0.0
+At Risk,64,0.0
+Loyal Customers,76,0.0
