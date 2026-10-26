@@ -1,0 +1,55 @@
+{
+  "config": {
+    "min_ap_lift": 0.05,
+    "min_pr_auc": 0.6,
+    "model": "balanced_logistic_regression",
+    "seed": 42,
+    "test_size": 0.25
+  },
+  "dataset_rows": 55487,
+  "dataset_sha256": "3004b7e286edb5d3ab7f55e16e2eca9c81f29b09e911f5f395f22db7c7675bd4",
+  "evaluation_status": "rejected_by_quality_gate",
+  "feature_columns": [
+    "price",
+    "freight_ratio",
+    "num_items",
+    "num_sellers",
+    "payment_installments",
+    "review_score",
+    "delivery_delay_days",
+    "estimated_lead_days",
+    "actual_delivery_days",
+    "purchase_dow",
+    "purchase_month",
+    "purchase_hour",
+    "seller_late_rate",
+    "seller_order_count",
+    "customer_seller_distance_km",
+    "product_category",
+    "payment_type",
+    "customer_state"
+  ],
+  "feature_query_runtime_seconds": 177.8,
+  "gate": {
+    "configured_min_pr_auc": 0.6,
+    "effective_required_pr_auc": 0.6,
+    "minimum_prevalence_lift": 0.05,
+    "passed": false
+  },
+  "metrics": {
+    "pr_auc_lift_over_prevalence": 0.0031801351582583966,
+    "retained_pr_auc": 0.016412785284112406,
+    "retained_prevalence": 0.01323265012585401,
+    "roc_auc_retained": 0.5589813139491038
+  },
+  "notes": "Temporal holdout evaluated with fixed seed 42. The real-data quality gate failed; no deployable model artifact was produced.",
+  "split": {
+    "holdout_nonretained_rows": 13721,
+    "holdout_retained_rows": 184,
+    "holdout_rows": 13905,
+    "holdout_starts": "2018-02-12",
+    "method": "chronological_scoring_date",
+    "train_rows": 41582
+  },
+  "time_column": "scoring_date"
+}

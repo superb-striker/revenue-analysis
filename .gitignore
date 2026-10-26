@@ -2,5 +2,6 @@
 .venv
 .git
 model/
+/data/processed/
 .pytest_cache/
 __pycache__/
